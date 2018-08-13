@@ -29,8 +29,8 @@ var server = http.createServer(function(req, res){
 
 
 	//4. log the requested path
-	console.log('Requested path is on:'+trimmedPath);
-	
+	console.log('Requested path is on:'+trimmedPath); // if you do 'curl localhost:3000/myPath' it will return 'Requested path is on:myPath'
+
 });
 
 //start the server and have it listen on port 3000
@@ -41,3 +41,5 @@ server.listen(3000, function(){
 
 // To check if this is working goto the terminal and run 'node index.js' and in the other tab 'curl localhost:3000' to see the output
 // You need to press CTRL + C to stop the server.
+
+
